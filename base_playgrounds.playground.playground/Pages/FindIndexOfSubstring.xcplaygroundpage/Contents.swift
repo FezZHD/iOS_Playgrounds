@@ -1,5 +1,3 @@
-import UIKit
-
 var string = "Hello, World!"
 var animalString = "🐶🐔🐷🐮🐱"
 
