@@ -1,8 +1,8 @@
 public extension String {
     
-    func indexOf(search substring: String) throws -> Int{
+    func indexOf(search substring: String) throws -> Int {
         
-        if (self.count < substring.count){
+        if (self.count < substring.count) {
             throw StringError.differenceBetweenLength(
                 "Length between \(self) and \(substring) is different")
         }
@@ -17,7 +17,7 @@ public extension String {
             let subword = self[startIndex ..< endIndex]
             
             print(subword)
-            if (subword == substring){
+            if (subword == substring) {
                 return distance(from: self.startIndex, to: startIndex)
             }
         }
